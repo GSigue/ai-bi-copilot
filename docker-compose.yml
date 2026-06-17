@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  ai-bi-copilot:
+    build: .
+    container_name: ai-bi-copilot
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
